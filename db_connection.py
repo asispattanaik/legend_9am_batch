@@ -1,12 +1,7 @@
 import pymysql
-
-connection = pymysql.connect(
-    host="localhost",
+connector=pymysql.connect(
     user="root",
-    password="yourpassword",
-    database="movie_pipeline",
-    port=3306
-)
-
-print("✅ Direct PyMySQL connection successful!")
-connection.close()
+    host="localhost",
+    password="123456789",
+    port=3306)
+print(connector,"connection succesful Go aheed")
